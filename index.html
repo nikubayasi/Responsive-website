@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- stylesheet -->
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -27,13 +28,13 @@
             <li><a href="index.html"><img src="./images/public/github.png" alt=""></a></li>
             <li><a href="index.html"><img src="./images/public/facebook.png" alt=""></a></li>
             <li><a href="index.html"><img src="./images/public/instagram.png" alt=""></a></li>
-            <li><a href="index.html"><img src="./images/public/linkedin.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/pinterest.png" alt=""></a></li>
           </ul>
         </div>
         <div class="logo w-1-3">
-          <span><img src="images/logo2.png" alt="" class="logo-img"></span>
+          <span><img src="images/logo4.png" alt="" class="logo-img"></span>
           <h2 class="logo-heading">NiikuCloud</h2>
-          <small>レンタルクラウド</small>
+          <!-- <small>クラウド</small> -->
           
         </div>
         
@@ -51,13 +52,54 @@
     <section class="showcase">
       <div class="container grid">
         <div class="showcase-text">
-          <h1>より簡単に導入できる </h1>
-          <p>大規模なエンタープライス API から個人向けの静的 Web サイトまで、あらゆる種類の Web アプリをデプロイします。フォームに記入してプラットフォームのデモを試してください</p>
-          <a href="features.html" class="btn btn-outline">続きを読む</a>
+          <h1>より簡単に<br>導入できる</h1>
+          <p>大規模なエンタープライス API から個人向けの静的Web サイトまで、あらゆる種類の Web アプリをデプロイします。フォームに記入してプラットフォームのデモを試してください</p>
+          <a href="features.html" class="btn-outline">続きを読む</a>
+        </div>
+
+        <div class="showcase-form card">
+          <h2>Request a Demo</h2>
+          <form action="">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="氏名" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="company" placeholder="会社名" required>
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Eメールアドレス" required>
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary">
+          </form>
         </div>
       </div>
     </section>
-    
+
+    <!-- Statz -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">
+          クラウドコンピューティングは、インターネットを通じてデータストレージや計算リソース、<br>アプリケーションなどをオンデマンドで利用できる技術です。
+        </h3>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+            <h3>10,345,567</h3>
+            <p class="text-secondary">展開する</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+            <h3>987 TB</h3>
+            <p class="text-secondary">公開する</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h3>2,343,265</h3>
+            <p class="text-secondary">プロジェクト</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="" async defer></script>
   </body>
 </html>

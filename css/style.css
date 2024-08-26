@@ -121,6 +121,9 @@ nav{
   color:white;
   height: 500px;
   position:relative;
+  text-shadow: 1px 1px 2px black
+  0px 1px 1em black,
+  
 }
 .showcase h1{
   font-size: 3rem;
@@ -194,6 +197,19 @@ nav{
   font-size: 20px;
   font-weight: bold;
 }
+
+/* Cli */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+}
+
+.cli .grid > *:first-child{
+  grid-column:1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+
 
 @media screen and (max-width: 1024px){
   .logo small{

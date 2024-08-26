@@ -1,0 +1,25 @@
+/* idをセレクタに指定するときは先頭に「#（ハッシュ）」を付けます。
+#first-heading{
+  color:red;
+}
+/* classをセレクタに指定するときは先頭に「.(ドット)」を付けます。 
+.paragraph{
+  color:red;
+} */
+
+/* #first-heading{
+  color:red;
+}
+#second-paragraph{
+  color:blue;
+} */
+
+.text-red{
+  color:red;
+}
+.text-blue{
+  color:blue;
+}
+.text-right{
+  text-align:right;
+}

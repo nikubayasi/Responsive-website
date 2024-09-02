@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive website</title>
+    <meta name="description" content="クラウドコンピューティングは、インターネットを通じてデータストレージやアプリケーションを柔軟に利用できる技術です。スケーラビリティ、コスト効率、そして迅速なリソース展開が可能です。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container flex header-nav">
+        <div class="sns">
+          <ul>
+            <li><a href="index.html"><img src="./images/public/github.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/facebook.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/instagram.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/pinterest.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <span><img src="images/logo4.png" alt="" class="logo-img"></span>
+          <h2 class="logo-heading">NiikuCloud</h2>
+          <!-- <small>クラウド</small> -->
+        </div>
+        
+        <ul class="nav-list">
+         <li><a class="active" href="index2.html">Home</a></li>
+         <li><a href="features.html">Features</a></li>
+         <li><a href="docs.html">Docs</a></li>
+       </ul>
+       <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+        
+        <!-- <nav class="nav-list">
+          <ul class="sidebar">
+             <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-bars" height="26"></i></a></li> -->
+
+            <!-- <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul> -->
+          <!-- <ul>
+            
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="features.html">Features</a></li>
+            <li class="hideOnMobile"><a href="docs.html">Docs</a></li>
+            <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+          </ul> -->
+        </nav>
+      </div>
+    </div>
+
+    <!-- ----------------------      ショーケース---------------------------------------- -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>より簡単に<br>導入できる</h1>
+          <p>大規模なエンタープライス API から個人向けの静的Web サイトまで、あらゆる種類の Web アプリをデプロイします。フォームに記入してプラットフォームのデモを試してください</p>
+          <a href="features.html" class="btn-outline">続きを読む</a>
+        </div>
+
+        <div class="showcase-form card">
+          <h2>Request a Demo</h2>
+          <form action="">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="氏名" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="company" placeholder="会社名" required>
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Eメールアドレス" required>
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statz -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">
+          クラウドコンピューティングは、インターネットを通じてデータストレージや計算リソース、<br>アプリケーションなどをオンデマンドで利用できる技術です。
+        </h3>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+            <h3>10,345,567</h3>
+            <p class="text-secondary">展開する</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+            <h3>987 TB</h3>
+            <p class="text-secondary">公開する</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h3>2,343,265</h3>
+            <p class="text-secondary">プロジェクト</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CLi -->
+     <article>
+      <section class="cli">
+        
+        <div class="container grid">
+          <img src="images/niikucli.png" alt="">
+          <div class="card">
+            <h3>使いやすい、クロスプラットフォームの CLI</h3>
+          </div>
+          <div class="card">
+            <h3>数秒で展開</h3>
+          </div>
+        </div>
+      </section>
+     </article>
+
+     <!-- Cloud -->
+      <article>
+        <section class="cloud bg-primary my-2 py-2">
+          <div class="container grid">
+            <div class="text-center">
+              <h2 class="md">エクストリームクラウドホスティング</h2>
+              <p class="lead my-1">これまでに見たことのないクラウド ホスティング。高速、効率的、スケーラブル</p>
+              <a href="features.html" class="btn btn-black">続きを読む</a>
+            </div>
+            <img src="images/cloud.png" alt="">
+          </div>
+        </section>
+      </article>
+
+      <!-- Language -->
+       <article>
+        <section class="languages">
+          <h2 class="md text-center my-2">
+            Supported languages
+          </h2>
+          <div class="container flex">
+            <div class="card">
+              <h4>Node.js</h4>
+              <img class="plog-lan" src="images/logos/node.png" alt="">
+            </div>
+            <div class="card">
+              <h4>Ho</h4>
+              <img class="plog-lan" src="images/logos/go.png" alt="">
+            </div>
+            <div class="card">
+              <h4>Python</h4>
+              <img class="plog-lan" src="images/logos/python.png" alt="">
+            </div>
+            <div class="card">
+              <h4>Scala</h4>
+              <img class="plog-lan" src="images/logos/scala.png" alt="">
+            </div>
+            <div class="card">
+              <h4>Ruby</h4>
+              <img class="plog-lan" src="images/logos/ruby.png" alt="">
+            </div>
+            <div class="card">
+              <h4>PHP</h4>
+              <img class="plog-lan" src="images/logos/php.png" alt="">
+            </div>
+            <div class="card">
+              <h4>C#</h4>
+              <img class="plog-lan" src="images/logos/csharp.png" alt="">
+            </div>
+          </div>
+        </section>
+       </article>
+
+       <!-- footer -->
+      <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+          <div>
+            <h2>NiikuCloud</h2>
+            <small>Copyright &copy; 2024</small>
+          </div>
+          <nav class="footer">
+            <ul>
+              <li><a class="footer-item" href="index.html">Home</a></li>
+              <li><a class="footer-item" href="features.html">Features</a></li>
+              <li><a class="footer-item" href="docs.html">Docs</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </footer>
+    <!-- <script src="main.js" async defer></script> -->
+    <script>
+      hamburger = document.querySelector(".hamburger");
+
+      hamburger.onClick = function(){
+      navbar = document.querySelector(".nav-list");
+      navbar.classList.toggle("active");  
+      }
+    </script>
+  </body>
+</html>

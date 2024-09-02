@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive website</title>
+    <meta name="description" content="クラウドコンピューティングは、インターネットを通じてデータストレージやアプリケーションを柔軟に利用できる技術です。スケーラビリティ、コスト効率、そして迅速なリソース展開が可能です。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container flex header-nav">
+        <div class="sns">
+          <ul>
+            <li><a href="index.html"><img src="./images/public/github.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/facebook.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/instagram.png" alt=""></a></li>
+            <li><a href="index.html"><img src="./images/public/pinterest.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <span><img src="images/logo4.png" alt="" class="logo-img"></span>
+          <h2 class="logo-heading">NiikuCloud</h2>
+          <!-- <small>クラウド</small> -->
+        </div>
+        
+        <ul class="nav-list">
+         <li><a class="active" href="index2.html">Home</a></li>
+         <li><a href="features.html">Features</a></li>
+         <li><a href="docs.html">Docs</a></li>
+       </ul>
+       <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+        
+        <!-- <nav class="nav-list">
+          <ul class="sidebar">
+             <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-bars" height="26"></i></a></li> -->
+
+            <!-- <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul> -->
+          <!-- <ul>
+            
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="features.html">Features</a></li>
+            <li class="hideOnMobile"><a href="docs.html">Docs</a></li>
+            <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+          </ul> -->
+        </nav>
+      </div>
+    </div>
+
+    <!-- ----------------------ヒーローイメージ---------------------------------------- -->
+    <article>
+      <section class="features-head bg-primary py-3">
+        <div class="container grid ">
+          <div>
+            <h1 class="xl">Features</h1>
+            <p class="lead">競合他社から当社を引き離す Nikku Cloud の機能をチェックしてください</p>
+          </div>
+          <img src="images/server.png" alt="">
+        </div>
+      </section>
+
+      <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+          <div>
+            <h1 class="md">Nikku Cloud<br>プラットフォーム</h1>
+            <p>クラウドサーバーは、従来の物理的なサーバーとは異なり、データセンター内にある複数の物理サーバーからリソースを共有して仮想的に構成されます。これにより、ユーザーはハードウェアの購入や保守に関するコストを削減し、必要に応じてリソースを柔軟に拡張または縮小することができます。</p>
+          </div>
+          <img src="images/server2.png" alt="">
+        </div>
+      </section>
+
+      <section class="features-main my-2">
+        <div class="container grid  grid-3">
+          <div class="card flex">
+            <i class="fa-solid fa-server fa-3x"></i>
+            <p class="lead-sm">クラウドサーバーを利用することで、初期投資やハードウェアのメンテナンスコストを大幅に削減できます。ユーザーは利用した分だけ支払う「ペイ・アズ・ユー・ゴー」モデルを採用できるため、コストの最適化が可能です。</p>
+          </div>
+          <div class="card flex">
+            <i class="fa-solid fa-network-wired fa-3x"></i>
+            <p class="lead-sm">クラウドサーバーは、需要に応じてリソースを容易に拡張または縮小できます。これにより、ビジネスの成長に合わせてシステムを柔軟に対応させることが可能です。</p>
+          </div>
+          <div class="card flex">
+            <i class="fa-solid fa-laptop fa-3x"></i>
+            <p class="lead-sm">障害発生時にも迅速にリカバリーが可能でダウンタイムを最小限に抑えることができます。</p>
+          </div>
+          <div class="card flex">
+            <i class="fa-solid fa-database fa-3x"></i>
+            <p class="lead-sm">多くのクラウドプロバイダーは、データ暗号化やセキュリティ監視などの高度なセキュリティ対策を提供しています。これにより、オンプレミス環境よりも安全にデータを保護できます。</p>
+          </div>
+          <div class="card flex">
+            <i class="fa-solid fa-power-off fa-3x"></i>
+            <p class="lead-sm">クラウドサーバーを利用することで、初期投資やハードウェアのメンテナンスコストを大幅に削減できます。ユーザーは利用した分だけ支払う「ペイ・アズ・ユー・ゴー」モデルを採用できるため、コストの最適化が可能です。</p>
+          </div>
+          <div class="card flex">
+            <i class="fa-solid fa-upload fa-3x"></i>
+            <p class="lead-sm">各プロバイダーの料金プランや利用料を比較し、予算に合ったプランを選びます。初期コストだけでなく、運用コストも考慮しましょう。</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Statz -->
+
+    <!-- footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h2>NiikuCloud</h2>
+          <small>Copyright &copy; 2024</small>
+        </div>
+        <nav class="footer">
+          <ul>
+            <li><a class="footer-item" href="index.html">Home</a></li>
+            <li><a class="footer-item" href="features.html">Features</a></li>
+            <li><a class="footer-item" href="docs.html">Docs</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js" async defer></script>
+  </body>
+</html>
